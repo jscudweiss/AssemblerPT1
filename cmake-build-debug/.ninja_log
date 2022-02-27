@@ -1,4 +1,7 @@
 # ninja log v5
-1	207	6676802269589593	build.ninja	bf0967d153629724
-1	172	6673418482085379	CMakeFiles/assembler.dir/mystrcopy.c.obj	741988b1dcfa8018
+1	207	6677069868539517	build.ninja	bf0967d153629724
+2	130	6677044584807396	CMakeFiles/assembler.dir/mystrcopy.c.obj	741988b1dcfa8018
 173	340	6673418483727763	assembler.exe	d440f79a5f13abb1
+8	103	6677044584538291	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+22	133	6677044584837298	CMakeFiles/assembler.dir/maptest.c.obj	eef3235b5acd3fb
+17	146	6677044584986862	CMakeFiles/assembler.dir/map.c.obj	3f5747c961989ad2
