@@ -1,0 +1,4 @@
+# ninja log v5
+1	207	6676802269589593	build.ninja	bf0967d153629724
+1	172	6673418482085379	CMakeFiles/assembler.dir/mystrcopy.c.obj	741988b1dcfa8018
+173	340	6673418483727763	assembler.exe	d440f79a5f13abb1
