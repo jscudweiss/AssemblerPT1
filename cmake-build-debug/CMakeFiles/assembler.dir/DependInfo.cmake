@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.c" "CMakeFiles/assembler.dir/assembler.c.obj" "gcc" "CMakeFiles/assembler.dir/assembler.c.obj.d"
-  "C:/Users/jscud/CLionProjects/AssemblerPT1/maps.c" "CMakeFiles/assembler.dir/maps.c.obj" "gcc" "CMakeFiles/assembler.dir/maps.c.obj.d"
+  "C:/Users/jscud/CLionProjects/AssemblerPT1/map.c" "CMakeFiles/assembler.dir/map.c.obj" "gcc" "CMakeFiles/assembler.dir/map.c.obj.d"
   "C:/Users/jscud/CLionProjects/AssemblerPT1/maptest.c" "CMakeFiles/assembler.dir/maptest.c.obj" "gcc" "CMakeFiles/assembler.dir/maptest.c.obj.d"
   "C:/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c" "CMakeFiles/assembler.dir/mystrcopy.c.obj" "gcc" "CMakeFiles/assembler.dir/mystrcopy.c.obj.d"
   )

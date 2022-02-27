@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/assembler.dir/assembler.c.obj"
   "CMakeFiles/assembler.dir/assembler.c.obj.d"
-  "CMakeFiles/assembler.dir/maps.c.obj"
-  "CMakeFiles/assembler.dir/maps.c.obj.d"
+  "CMakeFiles/assembler.dir/map.c.obj"
+  "CMakeFiles/assembler.dir/map.c.obj.d"
   "CMakeFiles/assembler.dir/maptest.c.obj"
   "CMakeFiles/assembler.dir/maptest.c.obj.d"
   "CMakeFiles/assembler.dir/mystrcopy.c.obj"

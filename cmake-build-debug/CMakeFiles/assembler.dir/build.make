@@ -96,19 +96,19 @@ CMakeFiles/assembler.dir/assembler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/assembler.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\assembler.c -o CMakeFiles\assembler.dir\assembler.c.s
 
-CMakeFiles/assembler.dir/maps.c.obj: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/maps.c.obj: ../maps.c
-CMakeFiles/assembler.dir/maps.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/assembler.dir/maps.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/maps.c.obj -MF CMakeFiles\assembler.dir\maps.c.obj.d -o CMakeFiles\assembler.dir\maps.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\maps.c
+CMakeFiles/assembler.dir/map.c.obj: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/map.c.obj: ../map.c
+CMakeFiles/assembler.dir/map.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/assembler.dir/map.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/map.c.obj -MF CMakeFiles\assembler.dir\map.c.obj.d -o CMakeFiles\assembler.dir\map.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\map.c
 
-CMakeFiles/assembler.dir/maps.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/maps.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\maps.c > CMakeFiles\assembler.dir\maps.c.i
+CMakeFiles/assembler.dir/map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/map.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\map.c > CMakeFiles\assembler.dir\map.c.i
 
-CMakeFiles/assembler.dir/maps.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/maps.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\maps.c -o CMakeFiles\assembler.dir\maps.c.s
+CMakeFiles/assembler.dir/map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/map.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\map.c -o CMakeFiles\assembler.dir\map.c.s
 
 CMakeFiles/assembler.dir/maptest.c.obj: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/maptest.c.obj: ../maptest.c
@@ -128,7 +128,7 @@ CMakeFiles/assembler.dir/maptest.c.s: cmake_force
 assembler_OBJECTS = \
 "CMakeFiles/assembler.dir/mystrcopy.c.obj" \
 "CMakeFiles/assembler.dir/assembler.c.obj" \
-"CMakeFiles/assembler.dir/maps.c.obj" \
+"CMakeFiles/assembler.dir/map.c.obj" \
 "CMakeFiles/assembler.dir/maptest.c.obj"
 
 # External object files for target assembler
@@ -136,7 +136,7 @@ assembler_EXTERNAL_OBJECTS =
 
 assembler.exe: CMakeFiles/assembler.dir/mystrcopy.c.obj
 assembler.exe: CMakeFiles/assembler.dir/assembler.c.obj
-assembler.exe: CMakeFiles/assembler.dir/maps.c.obj
+assembler.exe: CMakeFiles/assembler.dir/map.c.obj
 assembler.exe: CMakeFiles/assembler.dir/maptest.c.obj
 assembler.exe: CMakeFiles/assembler.dir/build.make
 assembler.exe: CMakeFiles/assembler.dir/linklibs.rsp

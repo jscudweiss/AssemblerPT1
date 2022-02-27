@@ -152,29 +152,29 @@ assembler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/assembler.c.s
 .PHONY : assembler.c.s
 
-maps.obj: maps.c.obj
-.PHONY : maps.obj
+map.obj: map.c.obj
+.PHONY : map.obj
 
 # target to build an object file
-maps.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/maps.c.obj
-.PHONY : maps.c.obj
+map.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/map.c.obj
+.PHONY : map.c.obj
 
-maps.i: maps.c.i
-.PHONY : maps.i
+map.i: map.c.i
+.PHONY : map.i
 
 # target to preprocess a source file
-maps.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/maps.c.i
-.PHONY : maps.c.i
+map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/map.c.i
+.PHONY : map.c.i
 
-maps.s: maps.c.s
-.PHONY : maps.s
+map.s: map.c.s
+.PHONY : map.s
 
 # target to generate assembly for a file
-maps.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/maps.c.s
-.PHONY : maps.c.s
+map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/map.c.s
+.PHONY : map.c.s
 
 maptest.obj: maptest.c.obj
 .PHONY : maptest.obj
@@ -236,9 +236,9 @@ help:
 	@echo ... assembler.obj
 	@echo ... assembler.i
 	@echo ... assembler.s
-	@echo ... maps.obj
-	@echo ... maps.i
-	@echo ... maps.s
+	@echo ... map.obj
+	@echo ... map.i
+	@echo ... map.s
 	@echo ... maptest.obj
 	@echo ... maptest.i
 	@echo ... maptest.s

@@ -33,7 +33,7 @@ void mystrcopy(char* out, char* in) {
     *out = '\0';
 }
 
-int main(int argc, char **argv) {
+/*int main(int argc, char **argv) {
 
     char inputBuffer[MAX_LINE_LEN];
     char copiedBuffer[MAX_LINE_LEN];
@@ -41,4 +41,4 @@ int main(int argc, char **argv) {
     mystrcopy(inputBuffer, "hello world");
 
     puts(inputBuffer);
-}
+}*/
