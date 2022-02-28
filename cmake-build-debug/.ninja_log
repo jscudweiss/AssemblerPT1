@@ -1,7 +1,23 @@
 # ninja log v5
-1	207	6677069868539517	build.ninja	bf0967d153629724
+1	207	6677627553496724	build.ninja	bf0967d153629724
 2	130	6677044584807396	CMakeFiles/assembler.dir/mystrcopy.c.obj	741988b1dcfa8018
 173	340	6673418483727763	assembler.exe	d440f79a5f13abb1
-8	103	6677044584538291	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
 22	133	6677044584837298	CMakeFiles/assembler.dir/maptest.c.obj	eef3235b5acd3fb
+8	103	6677044584538291	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
 17	146	6677044584986862	CMakeFiles/assembler.dir/map.c.obj	3f5747c961989ad2
+4	220	6677627553496724	build.ninja	bf0967d153629724
+11	188	6677627555946562	CMakeFiles/assembler.dir/mystrcopy.c.obj	741988b1dcfa8018
+2	201	6677627556020547	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+45	211	6677627556164959	CMakeFiles/assembler.dir/maptest.c.obj	eef3235b5acd3fb
+28	233	6677627556411209	CMakeFiles/assembler.dir/map.c.obj	3f5747c961989ad2
+233	496	6677627558992094	assembler.exe	e80d44de8aea5b6d
+3	157	6677627860726718	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+159	390	6677627862945611	assembler.exe	e80d44de8aea5b6d
+1	134	6677628396529353	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+136	377	6677628398856319	assembler.exe	e80d44de8aea5b6d
+2	187	6677629534772230	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+188	433	6677629537152603	assembler.exe	e80d44de8aea5b6d
+2	177	6677629860845690	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+179	460	6677629863591484	assembler.exe	e80d44de8aea5b6d
+3	496	6677632120707925	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+498	907	6677632124789642	assembler.exe	e80d44de8aea5b6d

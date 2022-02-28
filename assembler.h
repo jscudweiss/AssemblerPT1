@@ -6,3 +6,13 @@
 #define ASSEMBLER_ASSEMBLER_H
 
 #endif //ASSEMBLER_ASSEMBLER_H
+
+typedef struct {
+
+
+
+}Parser;
+
+typedef struct {}Code;
+
+typedef struct {}SymbolTable;

@@ -57,11 +57,29 @@ void cleanLine(char* inputString, char *cleanedLine){
 
 
 //determine command type
+//type = 0 = A comm
+//type = 1 = L comm
+//type = 2 = C comm
+char* commandType(char* comm){
+    char *out = malloc(9);
+    switch (*comm) {
+        case '@':
+            out = "A_COMMAND";
+            break;
+        case '(':
+            out = "L_COMMAND";
+            break;
+        default:
+            out = "C_COMMAND";
+            break;
+    }
+    return out;
+}
 
 
 //main method
 int main() {
-    loadFile("C:/Users/jscud/CLionProjects/AssemblerPT1/hello.txt");
+    loadFile("C:/Users/jscud/CLionProjects/assembler/hello.txt");
     char buffer[MAX_LEN];
     readLine(buffer);
     printf("%s", buffer);
@@ -69,5 +87,9 @@ int main() {
     char mbuffer[MAX_LEN];
     cleanLine(buffer,mbuffer);
     printf("%s", mbuffer);
+    putchar('\n');
+    char *type;
+    type = commandType(mbuffer);
+    printf("%s", type);
     return 0;
 }

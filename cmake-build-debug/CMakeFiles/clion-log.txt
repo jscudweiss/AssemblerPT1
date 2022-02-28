@@ -1,6 +1,10 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/jscud/CLionProjects/AssemblerPT1"
-CMake Error at CMakeLists.txt:1 (cmake_minimum_required):
-  CMake 3.21 or higher is required.  You are running version 3.16.3
-
-
--- Configuring incomplete, errors occurred!
+"C:\Program Files\JetBrains\CLion 2021.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.2/bin/ninja/win/ninja.exe" -G Ninja C:\Users\jscud\CLionProjects\assembler
+-- The C compiler identification is GNU 11.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/JetBrains/CLion 2021.3.2/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/jscud/CLionProjects/assembler/cmake-build-debug
