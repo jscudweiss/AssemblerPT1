@@ -1,3 +1,6 @@
+//hkjhkj
+//lkjlkj
+
 @strlen //go to @16
 M=0     //set M to 0
 @100    //A=100

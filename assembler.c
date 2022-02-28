@@ -37,6 +37,8 @@ void cleanLine(char *inputString, char *cleanedLine) {
         switch (*inputString) {
             case ' ':
                 break;
+            case '\n':
+                break;
             case '/':
                 switch (*(inputString + 1)) {
                     case '/':
@@ -61,17 +63,20 @@ void cleanLine(char *inputString, char *cleanedLine) {
 //type = 0 = A comm
 //type = 1 = L comm
 //type = 2 = C comm
-char *commandType(char *comm) {
+char *commandType(char comm[200]) {
     char *out = malloc(9);
     switch (*comm) {
+        case '\0':
+            out = "";
+            break;
         case '@':
-            out = "A_COMMAND";
+            out = "A_COMMAND\n";
             break;
         case '(':
-            out = "L_COMMAND";
+            out = "L_COMMAND\n";
             break;
         default:
-            out = "C_COMMAND";
+            out = "C_COMMAND\n";
             break;
     }
     return out;
@@ -89,7 +94,6 @@ int main() {
         cleanLine(line, cleanedLine);
         output = commandType(cleanedLine);
         printf("%s", output);
-        putchar('\n');
         readLine(line);
     }
     free(output);
