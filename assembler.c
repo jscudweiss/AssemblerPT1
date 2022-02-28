@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
 
 #include "assembler.h"
 
@@ -11,22 +12,47 @@
 
 
 //read Input
-FILE *loadFile(char *filePath) {
-    FILE *IO = fopen(filePath, "r");
+FILE *IO;
+
+void loadFile(char *filePath) {
+    IO = fopen(filePath, "r");
 
     if (IO == NULL) {
         printf("Error: could not open file %s", filePath);
     }
-    return IO;
 }
 
-char *readLine(FILE *IO) {
-    char out[MAX_LEN];
-    fgets(out, MAX_LEN, IO);
-    return out;
+void readLine(char * curLine) {
+    fgets(curLine, MAX_LEN, IO);
 }
 
 //Clean up Line
+
+void cleanLine(char* inputString, char *cleanedLine){
+    bool slash = true;
+    while (*inputString != '\0' && slash){
+        switch (*inputString) {
+            case ' ':
+                break;
+            case '/':
+                switch (*(inputString+1)) {
+                    case '/':
+                        slash=false;
+                        break;
+                    default:
+                        *cleanedLine = *inputString;
+                        cleanedLine++;
+                }
+                break;
+            default:
+                *cleanedLine = *inputString;
+                cleanedLine++;
+        }
+        inputString++;
+    }
+    *cleanedLine = '\0';
+}
+
 
 
 
@@ -35,7 +61,13 @@ char *readLine(FILE *IO) {
 
 //main method
 int main() {
-    FILE *IO = loadFile("hello.txt");
-    printf("%s", readLine(IO));
+    loadFile("C:/Users/jscud/CLionProjects/AssemblerPT1/hello.txt");
+    char buffer[MAX_LEN];
+    readLine(buffer);
+    printf("%s", buffer);
+    putchar('\n');
+    char mbuffer[MAX_LEN];
+    cleanLine(buffer,mbuffer);
+    printf("%s", mbuffer);
     return 0;
 }

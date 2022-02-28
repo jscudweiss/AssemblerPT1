@@ -1,3 +1,0 @@
-C:/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles/assembler.dir
-C:/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
