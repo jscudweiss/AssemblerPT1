@@ -22,22 +22,25 @@ void loadFile(char *filePath) {
     }
 }
 
-void readLine(char * curLine) {
-    fgets(curLine, MAX_LEN, IO);
+void readLine(char *curLine) {
+    char* out = fgets(curLine, MAX_LEN, IO);
+    if (out == NULL){
+        *curLine = '\0';
+    }
 }
 
 //Clean up Line
 
-void cleanLine(char* inputString, char *cleanedLine){
+void cleanLine(char *inputString, char *cleanedLine) {
     bool slash = true;
-    while (*inputString != '\0' && slash){
+    while (*inputString != '\0' && slash) {
         switch (*inputString) {
             case ' ':
                 break;
             case '/':
-                switch (*(inputString+1)) {
+                switch (*(inputString + 1)) {
                     case '/':
-                        slash=false;
+                        slash = false;
                         break;
                     default:
                         *cleanedLine = *inputString;
@@ -54,13 +57,11 @@ void cleanLine(char* inputString, char *cleanedLine){
 }
 
 
-
-
 //determine command type
 //type = 0 = A comm
 //type = 1 = L comm
 //type = 2 = C comm
-char* commandType(char* comm){
+char *commandType(char *comm) {
     char *out = malloc(9);
     switch (*comm) {
         case '@':
@@ -80,16 +81,18 @@ char* commandType(char* comm){
 //main method
 int main() {
     loadFile("C:/Users/jscud/CLionProjects/assembler/hello.txt");
-    char buffer[MAX_LEN];
-    readLine(buffer);
-    printf("%s", buffer);
-    putchar('\n');
-    char mbuffer[MAX_LEN];
-    cleanLine(buffer,mbuffer);
-    printf("%s", mbuffer);
-    putchar('\n');
-    char *type;
-    type = commandType(mbuffer);
-    printf("%s", type);
+    char line[200];
+    char cleanedLine[200];
+    char * output;
+    readLine(line);
+    while (*line != '\0') {
+        cleanLine(line, cleanedLine);
+        output = commandType(cleanedLine);
+        printf("%s", output);
+        putchar('\n');
+        readLine(line);
+    }
+    free(output);
+    free(IO);
     return 0;
 }

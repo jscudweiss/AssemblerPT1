@@ -1,1 +1,16 @@
-@testing testing testing // this shouldnt be seen
+@strlen //go to @16
+M=0     //set M to 0
+@100    //A=100
+D=M     //D=RAM[100]
+@END    //A=END
+D;JEQ   //GOTO prgram end if D==0
+@strlen //variable strlen
+M=M+1   //Increment strlen by 1
+D=M     //store M in D
+@100    //A=100
+D=D+A   //D = D+100
+A=D     //A=D
+D=M     //retrieve RAM[D]
+@4      //A=4
+0;JMP   //GOTO 4
+(END)
