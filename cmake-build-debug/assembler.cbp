@@ -79,6 +79,9 @@
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.c">
 			<Option target="assembler"/>
 		</Unit>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.h">
+			<Option target="assembler"/>
+		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/map.c">
 			<Option target="assembler"/>
 		</Unit>

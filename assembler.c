@@ -6,23 +6,36 @@
 #include <string.h>
 
 #include "assembler.h"
+
+#define MAX_LEN 200
+
+
 //read Input
-char readInput(char *filePath){
+FILE *loadFile(char *filePath) {
     FILE *IO = fopen(filePath, "r");
 
-    if (IO == NULL){
+    if (IO == NULL) {
         printf("Error: could not open file %s", filePath);
-        return ' ';
     }
+    return IO;
+}
 
-
+char *readLine(FILE *IO) {
+    char out[MAX_LEN];
+    fgets(out, MAX_LEN, IO);
+    return out;
 }
 
 //Clean up Line
+
 
 
 //determine command type
 
 
 //main method
-void main() {}
+int main() {
+    FILE *IO = loadFile("hello.txt");
+    printf("%s", readLine(IO));
+    return 0;
+}
