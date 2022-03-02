@@ -12,7 +12,7 @@
 #define MAX_LEN 200
 FILE *Out;
 void writeFile(char* filePath){
-    Out = fopen(filePath,"wb");
+    Out = fopen(filePath,"w");
 };
 
 void writeLine(char* line){

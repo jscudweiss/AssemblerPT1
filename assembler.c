@@ -40,7 +40,6 @@ int main(int argc, char** argv) {
         writeLine(output);
         readLine(line);
     }
-    writeLine("\0");
     free(output);
     return 0;
 }
