@@ -35,7 +35,7 @@ void endFile(){
 };
 void cleanLine(char *inputString, char *cleanedLine) {
     int slash = 1;
-    while (*inputString != '\0' && slash == 1) {
+    while (*inputString != '\0' && slash) {
         switch (*inputString) {
             case ' ':
                 break;

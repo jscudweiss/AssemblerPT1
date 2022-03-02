@@ -23,6 +23,5 @@ int main(int argc, char **argv) {
         writeLine(comOut);
     }
     endFile();
-    free(comOut);
     return 0;
 }
