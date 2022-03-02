@@ -4,8 +4,10 @@
 
 #ifndef ASSEMBLER_IO_H
 #define ASSEMBLER_IO_H
+
+#endif //ASSEMBLER_IO_H
 void initFile(char **filePaths);
-bool readLine(char *curLine);
+int readLine(char *curLine);
 void writeLine(const char* line);
 void endFile();
-#endif //ASSEMBLER_IO_H
+void cleanLine(char *inputString, char *cleanedLine);

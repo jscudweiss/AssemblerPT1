@@ -51,3 +51,8 @@
 3	185	6679552603815359	CMakeFiles/assembler.dir/command.c.obj	49e57fbda9ca8a50
 11	189	6679552603886385	CMakeFiles/assembler.dir/IO.c.obj	a2d2b0037df6090
 189	437	6679552606345662	assembler.exe	4ff4b62d8fcbe73e
+10	151	6679564006448760	CMakeFiles/assembler.dir/command.c.obj	49e57fbda9ca8a50
+26	160	6679564006538542	CMakeFiles/assembler.dir/IO.c.obj	a2d2b0037df6090
+2	138	6679564120883808	CMakeFiles/assembler.dir/assembler.c.obj	3fb1779563f1f05b
+2	117	6679564463599822	CMakeFiles/assembler.dir/cleaner.c.obj	8b156604945bbf1f
+118	328	6679564465645456	assembler.exe	4ff4b62d8fcbe73e

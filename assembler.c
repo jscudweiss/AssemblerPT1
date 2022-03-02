@@ -4,10 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 #include "command.h"
-#include "cleaner.h"
 #include "IO.h"
 
 #define MAX_LEN 200

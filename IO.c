@@ -5,9 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
-
-
 
 #define MAX_LEN 200
 
@@ -24,7 +21,7 @@ void initFile(char **filePaths) {
     }
 }
 
-bool readLine(char *curLine) {
+int readLine(char *curLine) {
     return (fgets(curLine, MAX_LEN, inFile) != NULL);
 }
 
@@ -36,3 +33,28 @@ void endFile(){
     fputs("\0",outFile);
     fclose(outFile);
 };
+void cleanLine(char *inputString, char *cleanedLine) {
+    int slash = 1;
+    while (*inputString != '\0' && slash == 1) {
+        switch (*inputString) {
+            case ' ':
+                break;
+            case '\n':
+                break;
+            case '/':
+                switch (*(inputString + 1)) {
+                    case '/':
+                        slash = 0;
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            default:
+                *cleanedLine = *inputString;
+                cleanedLine++;
+        }
+        inputString++;
+    }
+    *cleanedLine = '\0';
+}
