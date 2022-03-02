@@ -7,39 +7,24 @@
 #include <stdbool.h>
 
 #include "command.h"
-#include "Reader.h"
 #include "cleaner.h"
-#include "write.h"
+#include "IO.h"
 
 #define MAX_LEN 200
 
 
-//read Input
-
-
-
-//Clean up Line
-
-
-
-
-
-
-
 //main method
-int main(int argc, char** argv) {
-    loadFile(argv[1]);
-    writeFile(argv[2]);
+int main(int argc, char **argv) {
+    initFile(argv);
     char line[200];
     char cleanedLine[200];
-    char * output;
-    readLine(line);
-    while (*line != '\0') {
+    char *comOut;
+    while (readLine(line)) {
         cleanLine(line, cleanedLine);
-        output = commandType(cleanedLine);
-        writeLine(output);
-        readLine(line);
+        comOut = commandType(cleanedLine);
+        writeLine(comOut);
     }
-    free(output);
+    endFile();
+    free(comOut);
     return 0;
 }

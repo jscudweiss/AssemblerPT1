@@ -1,2 +1,2 @@
-assembler: assembler.c command.c Reader.c cleaner.c command.h Reader.h cleaner.h
-	gcc -o assembler assembler.c command.c Reader.c cleaner.c command.h Reader.h cleaner.h
+assembler: assembler.c command.c IO.C cleaner.c command.h IO.h cleaner.h
+	gcc -o assembler assembler.c command.c IO.C cleaner.c command.h IO.h cleaner.h

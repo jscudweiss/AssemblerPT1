@@ -22,8 +22,7 @@ void cleanLine(char *inputString, char *cleanedLine) {
                         slash = false;
                         break;
                     default:
-                        *cleanedLine = *inputString;
-                        cleanedLine++;
+                        break;
                 }
                 break;
             default:

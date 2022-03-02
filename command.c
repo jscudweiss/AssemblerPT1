@@ -15,8 +15,11 @@
 char *commandType(char comm[200]) {
     char *out = malloc(9);
     switch (*comm) {
-        case '\0':
+        case ' ':
             out = "";
+            break;
+        case '\0':
+            out = "\0";
             break;
         case '@':
             out = "A_COMMAND\n";
