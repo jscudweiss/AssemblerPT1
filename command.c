@@ -11,24 +11,17 @@
 //type = 0 = A comm
 //type = 1 = L comm
 //type = 2 = C comm
-char *commandType(char comm[200]) {
-    char * out = malloc(12);
+char* commandType(const char comm[200]) {
     switch (*comm) {
         case ' ':
-            out = "";
-            break;
+            return "";;
         case '\0':
-            out = "\0";
-            break;
+            return "\0";
         case '@':
-            out = "A_COMMAND\n";
-            break;
+            return "A_COMMAND\n";
         case '(':
-            out = "L_COMMAND\n";
-            break;
+            return "L_COMMAND\n";
         default:
-            out = "C_COMMAND\n";
-            break;
+            return "C_COMMAND\n";
     }
-    return out;
 }

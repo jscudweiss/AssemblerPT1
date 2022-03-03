@@ -37,6 +37,7 @@ void writeLine(const char* line){
 void endFile(){
     fputs("\0",outFile);
     fclose(outFile);
+    fclose(inFile);
 };
 void cleanLine(char *inputString, char *cleanedLine) {
     int slash = 1;

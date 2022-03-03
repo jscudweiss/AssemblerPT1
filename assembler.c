@@ -17,10 +17,10 @@ int main(int argc, char **argv) {
     initFile(filePaths);
     char line[200];
     char cleanedLine[200];
-    char comOut[12];
+    char *comOut;
     while (readLine(line)) {
         cleanLine(line, cleanedLine);
-        commandType(cleanedLine);
+        comOut = commandType(cleanedLine);
         writeLine(comOut);
     }
     endFile();
