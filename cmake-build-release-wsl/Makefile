@@ -129,6 +129,30 @@ assembler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/build
 .PHONY : assembler/fast
 
+IO.o: IO.c.o
+.PHONY : IO.o
+
+# target to build an object file
+IO.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/IO.c.o
+.PHONY : IO.c.o
+
+IO.i: IO.c.i
+.PHONY : IO.i
+
+# target to preprocess a source file
+IO.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/IO.c.i
+.PHONY : IO.c.i
+
+IO.s: IO.c.s
+.PHONY : IO.s
+
+# target to generate assembly for a file
+IO.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/IO.c.s
+.PHONY : IO.c.s
+
 assembler.o: assembler.c.o
 .PHONY : assembler.o
 
@@ -152,6 +176,30 @@ assembler.s: assembler.c.s
 assembler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/assembler.c.s
 .PHONY : assembler.c.s
+
+command.o: command.c.o
+.PHONY : command.o
+
+# target to build an object file
+command.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/command.c.o
+.PHONY : command.c.o
+
+command.i: command.c.i
+.PHONY : command.i
+
+# target to preprocess a source file
+command.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/command.c.i
+.PHONY : command.c.i
+
+command.s: command.c.s
+.PHONY : command.s
+
+# target to generate assembly for a file
+command.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/command.c.s
+.PHONY : command.c.s
 
 map.o: map.c.o
 .PHONY : map.o
@@ -234,9 +282,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... assembler"
+	@echo "... IO.o"
+	@echo "... IO.i"
+	@echo "... IO.s"
 	@echo "... assembler.o"
 	@echo "... assembler.i"
 	@echo "... assembler.s"
+	@echo "... command.o"
+	@echo "... command.i"
+	@echo "... command.s"
 	@echo "... map.o"
 	@echo "... map.i"
 	@echo "... map.s"

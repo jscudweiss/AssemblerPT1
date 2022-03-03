@@ -76,10 +76,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/IO.c">
+			<Option target="assembler"/>
+		</Unit>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/IO.h">
+			<Option target="assembler"/>
+		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.c">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.h">
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/command.c">
+			<Option target="assembler"/>
+		</Unit>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/command.h">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/map.c">

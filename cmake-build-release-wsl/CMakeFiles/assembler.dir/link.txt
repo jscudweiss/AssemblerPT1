@@ -1,1 +1,1 @@
-/usr/bin/cc -O3 -DNDEBUG CMakeFiles/assembler.dir/mystrcopy.c.o CMakeFiles/assembler.dir/assembler.c.o CMakeFiles/assembler.dir/map.c.o CMakeFiles/assembler.dir/maptest.c.o -o assembler 
+/usr/bin/cc -O3 -DNDEBUG CMakeFiles/assembler.dir/mystrcopy.c.o CMakeFiles/assembler.dir/assembler.c.o CMakeFiles/assembler.dir/map.c.o CMakeFiles/assembler.dir/maptest.c.o CMakeFiles/assembler.dir/command.c.o CMakeFiles/assembler.dir/IO.c.o -o assembler 

@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "assembler::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-assembler-Debug-6b71120b7d870bdb40e1.json",
+					"jsonFile" : "target-assembler-Release-db628ea9eaeac1581fe3.json",
 					"name" : "assembler",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug",
+		"build" : "/mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl",
 		"source" : "/mnt/c/Users/jscud/CLionProjects/AssemblerPT1"
 	},
 	"version" : 

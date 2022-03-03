@@ -128,6 +128,30 @@ assembler/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/build
 .PHONY : assembler/fast
 
+IO.obj: IO.c.obj
+.PHONY : IO.obj
+
+# target to build an object file
+IO.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/IO.c.obj
+.PHONY : IO.c.obj
+
+IO.i: IO.c.i
+.PHONY : IO.i
+
+# target to preprocess a source file
+IO.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/IO.c.i
+.PHONY : IO.c.i
+
+IO.s: IO.c.s
+.PHONY : IO.s
+
+# target to generate assembly for a file
+IO.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/IO.c.s
+.PHONY : IO.c.s
+
 assembler.obj: assembler.c.obj
 .PHONY : assembler.obj
 
@@ -151,6 +175,30 @@ assembler.s: assembler.c.s
 assembler.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/assembler.c.s
 .PHONY : assembler.c.s
+
+command.obj: command.c.obj
+.PHONY : command.obj
+
+# target to build an object file
+command.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.obj
+.PHONY : command.c.obj
+
+command.i: command.c.i
+.PHONY : command.i
+
+# target to preprocess a source file
+command.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.i
+.PHONY : command.c.i
+
+command.s: command.c.s
+.PHONY : command.s
+
+# target to generate assembly for a file
+command.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.s
+.PHONY : command.c.s
 
 map.obj: map.c.obj
 .PHONY : map.obj
@@ -233,9 +281,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... assembler
+	@echo ... IO.obj
+	@echo ... IO.i
+	@echo ... IO.s
 	@echo ... assembler.obj
 	@echo ... assembler.i
 	@echo ... assembler.s
+	@echo ... command.obj
+	@echo ... command.i
+	@echo ... command.s
 	@echo ... map.obj
 	@echo ... map.i
 	@echo ... map.s
