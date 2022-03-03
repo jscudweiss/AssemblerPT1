@@ -12,7 +12,7 @@
 //type = 1 = L comm
 //type = 2 = C comm
 char *commandType(char comm[200]) {
-    char *out = malloc(9);
+    char * out = malloc(12);
     switch (*comm) {
         case ' ':
             out = "";

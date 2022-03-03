@@ -24,4 +24,5 @@ CMakeFiles/assembler.dir/assembler.c.obj: \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/x86_64-w64-mingw32/include/string.h \
  C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
  C:\Users\jscud\CLionProjects\AssemblerPT1\command.h \
- C:\Users\jscud\CLionProjects\AssemblerPT1\IO.h
+ C:\Users\jscud\CLionProjects\AssemblerPT1\IO.h \
+ C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/x86_64-w64-mingw32/include/ctype.h

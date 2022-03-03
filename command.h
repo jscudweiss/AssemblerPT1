@@ -5,6 +5,6 @@
 #ifndef ASSEMBLER_COMMAND_H
 #define ASSEMBLER_COMMAND_H
 
-char *commandType(char comm[200]);
+void commandType(char comm[200]);
 
 #endif //ASSEMBLER_COMMAND_H

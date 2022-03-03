@@ -7,19 +7,21 @@
 
 #include "command.h"
 #include "IO.h"
+#include <ctype.h>
 
 #define MAX_LEN 200
 
 
 //main method
 int main(int argc, char **argv) {
-    initFile(argv);
+    char ** filePaths = argv;
+    initFile(filePaths);
     char line[200];
     char cleanedLine[200];
-    char *comOut;
+    char comOut[12];
     while (readLine(line)) {
         cleanLine(line, cleanedLine);
-        comOut = commandType(cleanedLine);
+        commandType(cleanedLine);
         writeLine(comOut);
     }
     endFile();

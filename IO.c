@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 #define MAX_LEN 200
 
@@ -14,10 +15,10 @@ FILE *inFile;
 
 
 void initFile(char **filePaths) {
-    outFile = fopen(filePaths[2],"w+");
-   inFile = fopen(filePaths[1], "r");
+    inFile = fopen(filePaths[1], "r");
+    outFile = fopen(filePaths[2],"w");
     if (inFile == NULL) {
-        printf("Error: could not open file %s", filePaths[1]);
+        printf("Error: could not open file %s\n", filePaths[1]);
     }
 }
 
@@ -37,9 +38,7 @@ void cleanLine(char *inputString, char *cleanedLine) {
     int slash = 1;
     while (*inputString != '\0' && slash) {
         switch (*inputString) {
-            case ' ':
-                break;
-            case '\n':
+            case ' ': case '\t': case '\n': case '\v': case '\f': case '\r':
                 break;
             case '/':
                 switch (*(inputString + 1)) {
