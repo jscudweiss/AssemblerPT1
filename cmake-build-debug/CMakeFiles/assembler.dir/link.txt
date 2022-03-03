@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/assembler.dir/mystrcopy.c.o CMakeFiles/assembler.dir/assembler.c.o CMakeFiles/assembler.dir/map.c.o CMakeFiles/assembler.dir/maptest.c.o -o assembler 

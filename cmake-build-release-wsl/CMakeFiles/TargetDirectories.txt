@@ -1,0 +1,3 @@
+/mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl/CMakeFiles/assembler.dir
+/mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl/CMakeFiles/edit_cache.dir
+/mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl/CMakeFiles/rebuild_cache.dir
