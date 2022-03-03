@@ -1,4 +1,1 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/jscud/CLionProjects/AssemblerPT1"
--- Configuring done
--- Generating done
--- Build files have been written to: /mnt/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-release-wsl
+CMake executable not found: \\wsl$\Ubuntu\usr\bin\cmake Configure Disable profile
