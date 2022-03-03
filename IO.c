@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <ctype.h>
 
 #define MAX_LEN 200
 
@@ -16,9 +15,14 @@ FILE *inFile;
 
 void initFile(char **filePaths) {
     inFile = fopen(filePaths[1], "r");
-    outFile = fopen(filePaths[2],"w");
     if (inFile == NULL) {
-        printf("Error: could not open file %s\n", filePaths[1]);
+        printf("Error: could not open inFile %s\n", filePaths[1]);
+        exit(1);
+    }
+    outFile = fopen(filePaths[2],"w");
+    if (outFile == NULL) {
+        printf("Error: could not open outFile %s\n", filePaths[1]);
+        exit(2);
     }
 }
 

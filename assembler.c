@@ -7,7 +7,6 @@
 
 #include "command.h"
 #include "IO.h"
-#include <ctype.h>
 
 #define MAX_LEN 200
 
