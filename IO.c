@@ -70,8 +70,7 @@ void cleanLine(char *inputString, char *cleanedLine) {
         switch (*inputString) {
             case ' ':case '\t':case '\n':case '\v':case '\f':case '\r':
                 //case representing all 6 whitespace characters, skip these
-                inputString++;
-                continue;
+                break;
             case '/':
                 //if a comment is found
                 slash = 0;
