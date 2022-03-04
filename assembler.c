@@ -18,11 +18,13 @@ int main(int argc, char **argv) {
     char line[200];
     char cleanedLine[200];
     char *comOut;
+    //while there are still lines in the file
     while (readLine(line)) {
         cleanLine(line, cleanedLine);
         comOut = commandType(cleanedLine);
         writeLine(comOut);
     }
+    //wrap up open memory
     endFile();
     return 0;
 }
