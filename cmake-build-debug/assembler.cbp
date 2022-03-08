@@ -82,19 +82,25 @@
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/IO.h">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/assembler.c">
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/Main.c">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/command.c">
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/codemake.c">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/command.h">
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/codemake.h">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/map.c">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/map.h">
+			<Option target="assembler"/>
+		</Unit>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/mappings.c">
+			<Option target="assembler"/>
+		</Unit>
+		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/mappings.h">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="C:/Users/jscud/CLionProjects/AssemblerPT1/maptest.c">

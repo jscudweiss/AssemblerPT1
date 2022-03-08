@@ -82,19 +82,19 @@ CMakeFiles/assembler.dir/mystrcopy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/mystrcopy.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\mystrcopy.c -o CMakeFiles\assembler.dir\mystrcopy.c.s
 
-CMakeFiles/assembler.dir/assembler.c.obj: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/assembler.c.obj: ../assembler.c
-CMakeFiles/assembler.dir/assembler.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/assembler.dir/assembler.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/assembler.c.obj -MF CMakeFiles\assembler.dir\assembler.c.obj.d -o CMakeFiles\assembler.dir\assembler.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\assembler.c
+CMakeFiles/assembler.dir/Main.c.obj: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/Main.c.obj: ../Main.c
+CMakeFiles/assembler.dir/Main.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/assembler.dir/Main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/Main.c.obj -MF CMakeFiles\assembler.dir\Main.c.obj.d -o CMakeFiles\assembler.dir\Main.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\Main.c
 
-CMakeFiles/assembler.dir/assembler.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/assembler.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\assembler.c > CMakeFiles\assembler.dir\assembler.c.i
+CMakeFiles/assembler.dir/Main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/Main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\Main.c > CMakeFiles\assembler.dir\Main.c.i
 
-CMakeFiles/assembler.dir/assembler.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/assembler.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\assembler.c -o CMakeFiles\assembler.dir\assembler.c.s
+CMakeFiles/assembler.dir/Main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/Main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\Main.c -o CMakeFiles\assembler.dir\Main.c.s
 
 CMakeFiles/assembler.dir/map.c.obj: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/map.c.obj: ../map.c
@@ -124,24 +124,10 @@ CMakeFiles/assembler.dir/maptest.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/maptest.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\maptest.c -o CMakeFiles\assembler.dir\maptest.c.s
 
-CMakeFiles/assembler.dir/command.c.obj: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/command.c.obj: ../command.c
-CMakeFiles/assembler.dir/command.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/assembler.dir/command.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/command.c.obj -MF CMakeFiles\assembler.dir\command.c.obj.d -o CMakeFiles\assembler.dir\command.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\command.c
-
-CMakeFiles/assembler.dir/command.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/command.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\command.c > CMakeFiles\assembler.dir\command.c.i
-
-CMakeFiles/assembler.dir/command.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/command.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\command.c -o CMakeFiles\assembler.dir\command.c.s
-
 CMakeFiles/assembler.dir/IO.c.obj: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/IO.c.obj: ../IO.c
 CMakeFiles/assembler.dir/IO.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/assembler.dir/IO.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/assembler.dir/IO.c.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/IO.c.obj -MF CMakeFiles\assembler.dir\IO.c.obj.d -o CMakeFiles\assembler.dir\IO.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\IO.c
 
 CMakeFiles/assembler.dir/IO.c.i: cmake_force
@@ -152,29 +138,59 @@ CMakeFiles/assembler.dir/IO.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/IO.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\IO.c -o CMakeFiles\assembler.dir\IO.c.s
 
+CMakeFiles/assembler.dir/mappings.c.obj: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/mappings.c.obj: ../mappings.c
+CMakeFiles/assembler.dir/mappings.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/assembler.dir/mappings.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/mappings.c.obj -MF CMakeFiles\assembler.dir\mappings.c.obj.d -o CMakeFiles\assembler.dir\mappings.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\mappings.c
+
+CMakeFiles/assembler.dir/mappings.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/mappings.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\mappings.c > CMakeFiles\assembler.dir\mappings.c.i
+
+CMakeFiles/assembler.dir/mappings.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/mappings.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\mappings.c -o CMakeFiles\assembler.dir\mappings.c.s
+
+CMakeFiles/assembler.dir/codemake.c.obj: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/codemake.c.obj: ../codemake.c
+CMakeFiles/assembler.dir/codemake.c.obj: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/assembler.dir/codemake.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/codemake.c.obj -MF CMakeFiles\assembler.dir\codemake.c.obj.d -o CMakeFiles\assembler.dir\codemake.c.obj -c C:\Users\jscud\CLionProjects\AssemblerPT1\codemake.c
+
+CMakeFiles/assembler.dir/codemake.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/codemake.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\jscud\CLionProjects\AssemblerPT1\codemake.c > CMakeFiles\assembler.dir\codemake.c.i
+
+CMakeFiles/assembler.dir/codemake.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/codemake.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\jscud\CLionProjects\AssemblerPT1\codemake.c -o CMakeFiles\assembler.dir\codemake.c.s
+
 # Object files for target assembler
 assembler_OBJECTS = \
 "CMakeFiles/assembler.dir/mystrcopy.c.obj" \
-"CMakeFiles/assembler.dir/assembler.c.obj" \
+"CMakeFiles/assembler.dir/Main.c.obj" \
 "CMakeFiles/assembler.dir/map.c.obj" \
 "CMakeFiles/assembler.dir/maptest.c.obj" \
-"CMakeFiles/assembler.dir/command.c.obj" \
-"CMakeFiles/assembler.dir/IO.c.obj"
+"CMakeFiles/assembler.dir/IO.c.obj" \
+"CMakeFiles/assembler.dir/mappings.c.obj" \
+"CMakeFiles/assembler.dir/codemake.c.obj"
 
 # External object files for target assembler
 assembler_EXTERNAL_OBJECTS =
 
 assembler.exe: CMakeFiles/assembler.dir/mystrcopy.c.obj
-assembler.exe: CMakeFiles/assembler.dir/assembler.c.obj
+assembler.exe: CMakeFiles/assembler.dir/Main.c.obj
 assembler.exe: CMakeFiles/assembler.dir/map.c.obj
 assembler.exe: CMakeFiles/assembler.dir/maptest.c.obj
-assembler.exe: CMakeFiles/assembler.dir/command.c.obj
 assembler.exe: CMakeFiles/assembler.dir/IO.c.obj
+assembler.exe: CMakeFiles/assembler.dir/mappings.c.obj
+assembler.exe: CMakeFiles/assembler.dir/codemake.c.obj
 assembler.exe: CMakeFiles/assembler.dir/build.make
 assembler.exe: CMakeFiles/assembler.dir/linklibs.rsp
 assembler.exe: CMakeFiles/assembler.dir/objects1.rsp
 assembler.exe: CMakeFiles/assembler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable assembler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\jscud\CLionProjects\AssemblerPT1\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable assembler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\assembler.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

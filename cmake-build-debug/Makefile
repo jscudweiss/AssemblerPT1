@@ -152,53 +152,53 @@ IO.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/IO.c.s
 .PHONY : IO.c.s
 
-assembler.obj: assembler.c.obj
-.PHONY : assembler.obj
+Main.obj: Main.c.obj
+.PHONY : Main.obj
 
 # target to build an object file
-assembler.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/assembler.c.obj
-.PHONY : assembler.c.obj
+Main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/Main.c.obj
+.PHONY : Main.c.obj
 
-assembler.i: assembler.c.i
-.PHONY : assembler.i
+Main.i: Main.c.i
+.PHONY : Main.i
 
 # target to preprocess a source file
-assembler.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/assembler.c.i
-.PHONY : assembler.c.i
+Main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/Main.c.i
+.PHONY : Main.c.i
 
-assembler.s: assembler.c.s
-.PHONY : assembler.s
+Main.s: Main.c.s
+.PHONY : Main.s
 
 # target to generate assembly for a file
-assembler.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/assembler.c.s
-.PHONY : assembler.c.s
+Main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/Main.c.s
+.PHONY : Main.c.s
 
-command.obj: command.c.obj
-.PHONY : command.obj
+codemake.obj: codemake.c.obj
+.PHONY : codemake.obj
 
 # target to build an object file
-command.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.obj
-.PHONY : command.c.obj
+codemake.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/codemake.c.obj
+.PHONY : codemake.c.obj
 
-command.i: command.c.i
-.PHONY : command.i
+codemake.i: codemake.c.i
+.PHONY : codemake.i
 
 # target to preprocess a source file
-command.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.i
-.PHONY : command.c.i
+codemake.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/codemake.c.i
+.PHONY : codemake.c.i
 
-command.s: command.c.s
-.PHONY : command.s
+codemake.s: codemake.c.s
+.PHONY : codemake.s
 
 # target to generate assembly for a file
-command.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/command.c.s
-.PHONY : command.c.s
+codemake.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/codemake.c.s
+.PHONY : codemake.c.s
 
 map.obj: map.c.obj
 .PHONY : map.obj
@@ -223,6 +223,30 @@ map.s: map.c.s
 map.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/map.c.s
 .PHONY : map.c.s
+
+mappings.obj: mappings.c.obj
+.PHONY : mappings.obj
+
+# target to build an object file
+mappings.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/mappings.c.obj
+.PHONY : mappings.c.obj
+
+mappings.i: mappings.c.i
+.PHONY : mappings.i
+
+# target to preprocess a source file
+mappings.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/mappings.c.i
+.PHONY : mappings.c.i
+
+mappings.s: mappings.c.s
+.PHONY : mappings.s
+
+# target to generate assembly for a file
+mappings.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\assembler.dir\build.make CMakeFiles/assembler.dir/mappings.c.s
+.PHONY : mappings.c.s
 
 maptest.obj: maptest.c.obj
 .PHONY : maptest.obj
@@ -284,15 +308,18 @@ help:
 	@echo ... IO.obj
 	@echo ... IO.i
 	@echo ... IO.s
-	@echo ... assembler.obj
-	@echo ... assembler.i
-	@echo ... assembler.s
-	@echo ... command.obj
-	@echo ... command.i
-	@echo ... command.s
+	@echo ... Main.obj
+	@echo ... Main.i
+	@echo ... Main.s
+	@echo ... codemake.obj
+	@echo ... codemake.i
+	@echo ... codemake.s
 	@echo ... map.obj
 	@echo ... map.i
 	@echo ... map.s
+	@echo ... mappings.obj
+	@echo ... mappings.i
+	@echo ... mappings.s
 	@echo ... maptest.obj
 	@echo ... maptest.i
 	@echo ... maptest.s

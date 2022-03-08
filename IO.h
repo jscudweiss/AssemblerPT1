@@ -11,3 +11,4 @@ int readLine(char *curLine);
 void writeLine(const char* line);
 void endFile();
 void cleanLine(char *inputString, char *cleanedLine);
+char* commandType(const char comm[200]);
