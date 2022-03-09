@@ -47,7 +47,7 @@ int readLine(char *curLine) {
  */
 void writeLine(const char *line) {
     fputs(line, outFile);
-};
+}
 
 /***
  * end the outFile with the null terminator and close both files
@@ -90,7 +90,7 @@ void cleanLine(char *inputString, char *cleanedLine) {
  * @param comm, the input command, a cleaned line
  * @return the command type of the line, A, C, or L.
  */
-char* commandType(const char comm[200]) {
+char* commandType(char* comm) {
     switch (*comm) {
         case ' ':
             //for empty lines

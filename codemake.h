@@ -9,3 +9,4 @@
 
 void collectVar(char *inputString, char *inputType);
 int getCode(char *outCom);
+void freeVals();

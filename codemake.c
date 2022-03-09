@@ -13,9 +13,14 @@
 #define MAX_LEN 200
 #define MAX_LINES 32768
 
-char *commands[MAX_LINES][2];
+char *commands[MAX_LINES];
+char *comTypes[MAX_LINES];
 int curCom = 0;
 int commandNum = 0;
+
+void dummy(){
+
+}
 
 char *tenToTwo(int baseTen, char outBin[15]) {
     for (int i = 0; i < 15; i++) {
@@ -26,13 +31,16 @@ char *tenToTwo(int baseTen, char outBin[15]) {
 
 
 void parseL(char *string) {
-    char *myStr = malloc(MAX_LEN);
+    char strStart[200];
+    char *myStr = strStart;
+    char *strPtr = myStr;
     while (*string != '\0') {
         switch (*string) {
             case '(':
                 break;
             case ')':
-                addVar(myStr);
+                *myStr = '\0';
+                addVar(strPtr);
                 break;
             default:
                 *myStr = *string;
@@ -40,14 +48,13 @@ void parseL(char *string) {
         }
         string++;
     }
-    free(myStr);
 }
 
 void parseA(char *string, char *strOut) {
     string++;//iterate past the @
     long long len = strlen(string);
     char *ptr = string + (len - 2);
-    int loc = 0;
+    int loc;
     if (isdigit(*string)) {
         loc = (int) strtol(string, &ptr, 10);
     } else {
@@ -57,24 +64,26 @@ void parseA(char *string, char *strOut) {
     }
     char binOut[15];
     tenToTwo(loc, binOut);
-    strOut = "0";
-    strcat(strOut, binOut);
+    sprintf(strOut,"0%s\n", binOut);
+    dummy();
 }
 
-void parseC(char *string, char *strOut) {
-    strOut = "1111111111111111";
+void parseC(char *string, const char *strOut) {
+    strOut = "1111111111111111\n";
 }
 
 void collectVar(char *inputString, char *inputType) {
     switch (*inputType) {
-        case 'A':
-        case 'C':
-            commands[curCom][0] = inputString;
-            commands[curCom][1] = inputType;
+        case 'A':case 'C':
+            commands[curCom] = malloc(strlen(inputString));
+            strcpy(commands[curCom], inputString);
+            comTypes[curCom] = inputType;
             curCom++;
             break;
         case 'L':
             parseL(inputString);
+            break;
+        case '\0':
             break;
         default:
             printf("Invalid commandType %s is not a command Type", inputType);
@@ -83,8 +92,8 @@ void collectVar(char *inputString, char *inputType) {
 
 int getCode(char *outCom) {
     if (commandNum < curCom) {
-        char *stringCom = commands[commandNum][0];
-        char *typeCom = commands[commandNum][1];
+        char *stringCom = commands[commandNum];
+        char *typeCom = comTypes[commandNum];
         switch (*typeCom) {
             case 'A':
                 parseA(stringCom, outCom);
@@ -100,4 +109,9 @@ int getCode(char *outCom) {
     }
 }
 
+void freeVals(){
+    for(int i = 0; i<curCom; i++){
+        free(commands[i]);
+    }
+}
 

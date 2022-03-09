@@ -15,24 +15,23 @@ map variableLocs;
 int curVal = 0;
 
 void addVar(char* varName){
-    char* loc = "";
+    char loc[5];
     sprintf(loc,"%d", curVal);
     insertKey(variableLocs, varName, loc);
     curVal ++;
 }
 
 void initMaps(){
-    variableLocs = createMap(MAX_LEN);
+    variableLocs = createMap(2000);
     while (curVal < 16){
-        char * Name = "R";
-        sprintf(Name,"%d", curVal);
-        addVar(Name);
+        char strName[3];
+        sprintf(strName,"R%d", curVal);
+        addVar(strName);
     }
-
 }
 
-void getVal(char * key, char* ValueIndex){
-    ValueIndex = lookupKey(variableLocs, key);
+void getVal(char * key, char* ValueOut){
+    ValueOut = lookupKey(variableLocs, key);
 }
 
 void closeMaps(){

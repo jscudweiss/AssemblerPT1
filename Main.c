@@ -19,14 +19,15 @@ int main(int argc, char **argv) {
     initFile(filePaths);
     initMaps();
     char line[200];
-    char cleanedLine[200];
     char *comOut;
-    char* outStr = "";
+    char outStr[200];
     //while there are still lines in the file
     while (readLine(line)) {
+        char *cleanedLine = malloc(200);
         cleanLine(line, cleanedLine);
         comOut = commandType(cleanedLine);
         collectVar(cleanedLine,comOut);
+        free(cleanedLine);
     }
     // iterate through remaining lines and output the final binary
     while (getCode(outStr)){
@@ -35,5 +36,6 @@ int main(int argc, char **argv) {
     //wrap up open memory
     endFile();
     closeMaps();
+    freeVals();
     return 0;
 }
