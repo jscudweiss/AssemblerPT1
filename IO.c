@@ -46,7 +46,7 @@ int readLine(char *curLine) {
  * @param line, the line to be written to outFile
  */
 void writeLine(const char *line) {
-    fputs(line, outFile);
+    fprintf(outFile,"%0*s\n",16, line);
 }
 
 /***

@@ -20,20 +20,21 @@ int main(int argc, char **argv) {
     initMaps();
     char line[200];
     char *comOut;
-    char outStr[200];
+    char *outStr = malloc(200);
     //while there are still lines in the file
+    char *cleanedLine = malloc(200);
     while (readLine(line)) {
-        char *cleanedLine = malloc(200);
         cleanLine(line, cleanedLine);
         comOut = commandType(cleanedLine);
         collectVar(cleanedLine,comOut);
-        free(cleanedLine);
     }
+    free(cleanedLine);
     // iterate through remaining lines and output the final binary
     while (getCode(outStr)){
         writeLine(outStr);
     }
     //wrap up open memory
+    free(outStr);
     endFile();
     closeMaps();
     freeVals();

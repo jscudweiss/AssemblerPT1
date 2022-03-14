@@ -22,10 +22,14 @@ void dummy(){
 
 }
 
-char *tenToTwo(int baseTen, char outBin[15]) {
+void tenToTwo(int baseTen, char *outBin) {
+    outBin+=16;
+    *outBin = '\0';
+    outBin--;
     for (int i = 0; i < 15; i++) {
-        outBin[i] = (char) (baseTen % 2);
+        sprintf(outBin, "%i", (baseTen % 2));
         baseTen = baseTen / 2;
+        outBin--;
     }
 }
 
@@ -51,6 +55,7 @@ void parseL(char *string) {
 }
 
 void parseA(char *string, char *strOut) {
+    char* strOutVal = strOut;
     string++;//iterate past the @
     long long len = strlen(string);
     char *ptr = string + (len - 2);
@@ -62,14 +67,12 @@ void parseA(char *string, char *strOut) {
         getVal(string, locVal);
         loc = (int) strtol(locVal, &ptr, 10);
     }
-    char binOut[15];
-    tenToTwo(loc, binOut);
-    sprintf(strOut,"0%s\n", binOut);
-    dummy();
+    tenToTwo(loc, strOutVal);
+    *strOut = '0';
 }
 
-void parseC(char *string, const char *strOut) {
-    strOut = "1111111111111111\n";
+void parseC(char *string, char *strOut) {
+    sprintf(strOut,"1111111111111111\n");
 }
 
 void collectVar(char *inputString, char *inputType) {
