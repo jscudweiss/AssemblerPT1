@@ -28,8 +28,6 @@ int main(int argc, char **argv) {
         comOut = commandType(cleanedLine);
         collectVar(cleanedLine,comOut);
     }
-    free(line);
-    free(cleanedLine);
     // iterate through remaining lines and output the final binary
     char *textStr = malloc(MAX_LEN);
     while (getCode(outLine)){
@@ -39,6 +37,8 @@ int main(int argc, char **argv) {
         writeLine(strcat(textStr,"\n"));
     }
     //wrap up open memory
+    free(line);
+    free(cleanedLine);
     free(textStr);
     endFile();
     closeMaps();

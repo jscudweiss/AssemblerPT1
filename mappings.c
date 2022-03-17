@@ -31,7 +31,10 @@ void initMaps(){
 }
 
 int getVal(char * key){
-    return atoi(lookupKey(variableLocs, key));
+    char* outKey = lookupKey(variableLocs, key);
+    unsigned long long len = strlen(outKey);
+    char *ptr = outKey + (len - 2);
+    return strtol(outKey,&ptr,10);
 }
 
 void closeMaps(){

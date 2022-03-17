@@ -38,7 +38,9 @@ void initFile(char **filePaths) {
  */
 int readLine(char *curLine) {
     //read the current line
-    return fgets(curLine, MAX_LEN, inFile) != NULL;
+    char* outC = fgets(curLine, 250, inFile);
+    int out = outC != NULL;
+    return out;
 }
 
 /***
