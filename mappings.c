@@ -30,8 +30,8 @@ void initMaps(){
     }
 }
 
-void getVal(char * key, char* ValueOut){
-    ValueOut = lookupKey(variableLocs, key);
+int getVal(char * key){
+    return atoi(lookupKey(variableLocs, key));
 }
 
 void closeMaps(){

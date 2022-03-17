@@ -18,18 +18,11 @@ char *comTypes[MAX_LINES];
 int curCom = 0;
 int commandNum = 0;
 
-void dummy(){
-
-}
-
-void tenToTwo(int baseTen, char *outBin) {
-    outBin+=16;
-    *outBin = '\0';
-    outBin--;
-    for (int i = 0; i < 15; i++) {
-        sprintf(outBin, "%i", (baseTen % 2));
+void tenToTwo(int baseTen, int outBin[16]) {
+    outBin[0] = 0;
+    for (int i = 1; i<16; i++) {
+        outBin[i] = baseTen%2;
         baseTen = baseTen / 2;
-        outBin--;
     }
 }
 
@@ -54,8 +47,7 @@ void parseL(char *string) {
     }
 }
 
-void parseA(char *string, char *strOut) {
-    char* strOutVal = strOut;
+void parseA(char *string, int intOut[]) {
     string++;//iterate past the @
     long long len = strlen(string);
     char *ptr = string + (len - 2);
@@ -63,22 +55,24 @@ void parseA(char *string, char *strOut) {
     if (isdigit(*string)) {
         loc = (int) strtol(string, &ptr, 10);
     } else {
-        char *locVal = "";
-        getVal(string, locVal);
+        int locVal = 0;
+        locVal = getVal(string);
         loc = (int) strtol(locVal, &ptr, 10);
     }
-    tenToTwo(loc, strOutVal);
-    *strOut = '0';
+    tenToTwo(loc, intOut);
+    *intOut = 0;
 }
 
-void parseC(char *string, char *strOut) {
-    sprintf(strOut,"1111111111111111\n");
+void parseC(char *string, int intOut[]) {
+    for (int i = 0; i < 15; i++) {
+        intOut[i] = 1;
+    }
 }
 
 void collectVar(char *inputString, char *inputType) {
     switch (*inputType) {
         case 'A':case 'C':
-            commands[curCom] = malloc(strlen(inputString));
+            commands[curCom] = malloc(strlen(inputString)+1);
             strcpy(commands[curCom], inputString);
             comTypes[curCom] = inputType;
             curCom++;
@@ -93,7 +87,7 @@ void collectVar(char *inputString, char *inputType) {
     }
 }
 
-int getCode(char *outCom) {
+int getCode(int *outCom) {
     if (commandNum < curCom) {
         char *stringCom = commands[commandNum];
         char *typeCom = comTypes[commandNum];

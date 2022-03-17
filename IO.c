@@ -6,11 +6,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LEN 200
+#define MAX_LEN 250
 
 
-FILE *outFile;
-FILE *inFile;
+FILE *outFile = NULL;
+FILE *inFile = NULL;
 
 /***
  * opens all relevant files
@@ -38,7 +38,7 @@ void initFile(char **filePaths) {
  */
 int readLine(char *curLine) {
     //read the current line
-    return (fgets(curLine, MAX_LEN, inFile) != NULL);
+    return fgets(curLine, MAX_LEN, inFile) != NULL;
 }
 
 /***
@@ -46,7 +46,7 @@ int readLine(char *curLine) {
  * @param line, the line to be written to outFile
  */
 void writeLine(const char *line) {
-    fprintf(outFile,"%0*s\n",16, line);
+    fputs(line, outFile);
 }
 
 /***

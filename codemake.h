@@ -8,5 +8,5 @@
 #endif //ASSEMBLER_CODEMAKE_H
 
 void collectVar(char *inputString, char *inputType);
-int getCode(char *outCom);
+int getCode(int *outCom);
 void freeVals();

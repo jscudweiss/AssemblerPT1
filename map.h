@@ -17,7 +17,7 @@
 #define MAP_H_INCLUDED
 
 
-#define STR_LENGTH 26
+#define STR_LENGTH 40
 
 typedef struct {
     char *key;

@@ -10,7 +10,7 @@
 #include "mappings.h"
 #include "IO.h"
 
-#define MAX_LEN 200
+#define MAX_LEN 250
 
 
 //main method
@@ -18,23 +18,28 @@ int main(int argc, char **argv) {
     char ** filePaths = argv;
     initFile(filePaths);
     initMaps();
-    char line[200];
+    char* line = malloc(MAX_LEN);
     char *comOut;
-    char *outStr = malloc(200);
+    int outLine[16];
     //while there are still lines in the file
-    char *cleanedLine = malloc(200);
+    char *cleanedLine = malloc(MAX_LEN);
     while (readLine(line)) {
         cleanLine(line, cleanedLine);
         comOut = commandType(cleanedLine);
         collectVar(cleanedLine,comOut);
     }
+    free(line);
     free(cleanedLine);
     // iterate through remaining lines and output the final binary
-    while (getCode(outStr)){
-        writeLine(outStr);
+    char *textStr = malloc(MAX_LEN);
+    while (getCode(outLine)){
+        for(int curBin=0; curBin<16; curBin++){
+            sprintf(&textStr[curBin], "%d", outLine[curBin]);
+        }
+        writeLine(strcat(textStr,"\n"));
     }
     //wrap up open memory
-    free(outStr);
+    free(textStr);
     endFile();
     closeMaps();
     freeVals();

@@ -10,4 +10,4 @@
 void addVar(char* varName);
 void initMaps();
 void closeMaps();
-void getVal(char * key, char* valueOut);
+int getVal(char * key);
