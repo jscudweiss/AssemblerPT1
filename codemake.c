@@ -27,7 +27,7 @@ void tenToTwo(int baseTen, int outBin[16]) {
 }
 
 
-void parseL(char *string) {
+void parseL(char *string, int curLine) {
     char strStart[200];
     char *myStr = strStart;
     char *strPtr = myStr;
@@ -37,7 +37,7 @@ void parseL(char *string) {
                 break;
             case ')':
                 *myStr = '\0';
-                addVar(strPtr);
+                addL(strPtr, curLine);
                 break;
             default:
                 *myStr = *string;
@@ -61,12 +61,12 @@ void parseA(char *string, int intOut[16]) {
 }
 
 void parseC(char *string, int intOut[16]) {
-    for (int i = 0; i < 16; i++) {
+    for (int i = 0; i < 3; i++) {
         intOut[i] = 1;
     }
-    char *dest = NULL;
+    char *dest = "null";
     char *comp = string;
-    char *jump = NULL;
+    char *jump = "null";
     char *ptr = string;
     int isTrue = 1;
     while (isTrue) {
@@ -87,28 +87,25 @@ void parseC(char *string, int intOut[16]) {
         }
         ptr++;
     }
-    char *outString = malloc(MAX_LEN);
-    sprintf(outString, "dest = %s\n", dest);
-    writeLine(outString);
-    sprintf(outString, "comp = %s\n", comp);
-    writeLine(outString);
-    sprintf(outString, "jump = %s\n", jump);
-    writeLine(outString);
-    free(outString);
+    getDest(dest,intOut);
+    getComp(comp,intOut);
+    getJump(jump,intOut);
+    char outString[200];
+    sprintf(outString, "\n%s = %s ; %s\n", dest,comp,jump);
+    //writeLine(outString);
 }
 
 
 void collectVar(char *inputString, char *inputType) {
     switch (*inputType) {
-        case 'A':
-        case 'C':
+        case 'A':case 'C':
             commands[curCom] = malloc(strlen(inputString) + 1);
             strcpy(commands[curCom], inputString);
             comTypes[curCom] = inputType;
             curCom++;
             break;
         case 'L':
-            parseL(inputString);
+            parseL(inputString, curCom);
             break;
         case '\0':
             break;

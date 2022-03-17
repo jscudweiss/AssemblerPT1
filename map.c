@@ -94,7 +94,7 @@ int containsKey(map aMap, char *searchKey) {
     }
 
     // not found, return -1
-    return -1;    
+    return 0;
 }
 
 

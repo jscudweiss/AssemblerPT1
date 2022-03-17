@@ -92,7 +92,7 @@ void cleanLine(char *inputString, char *cleanedLine) {
  * @param comm, the input command, a cleaned line
  * @return the command type of the line, A, C, or L.
  */
-char* commandType(char* comm) {
+char* commandType(const char* comm) {
     switch (*comm) {
         case ' ':
             //for empty lines
@@ -101,10 +101,10 @@ char* commandType(char* comm) {
             //for the documents end
             return "\0";
         case '@':
-            return "A_COMMAND\n";
+            return "A\n";
         case '(':
-            return "L_COMMAND\n";
+            return "L\n";
         default:
-            return "C_COMMAND\n";
+            return "C\n";
     }
 }
