@@ -10,3 +10,4 @@
 void collectVar(char *inputString, char inputType);
 int getCode(int outCom[16]);
 void freeVals();
+void initLists();

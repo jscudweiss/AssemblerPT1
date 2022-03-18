@@ -153,6 +153,30 @@ IO.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/IO.c.s
 .PHONY : IO.c.s
 
+LinkedList.o: LinkedList.c.o
+.PHONY : LinkedList.o
+
+# target to build an object file
+LinkedList.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/LinkedList.c.o
+.PHONY : LinkedList.c.o
+
+LinkedList.i: LinkedList.c.i
+.PHONY : LinkedList.i
+
+# target to preprocess a source file
+LinkedList.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/LinkedList.c.i
+.PHONY : LinkedList.c.i
+
+LinkedList.s: LinkedList.c.s
+.PHONY : LinkedList.s
+
+# target to generate assembly for a file
+LinkedList.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/LinkedList.c.s
+.PHONY : LinkedList.c.s
+
 Main.o: Main.c.o
 .PHONY : Main.o
 
@@ -249,54 +273,6 @@ mappings.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/mappings.c.s
 .PHONY : mappings.c.s
 
-unused/maptest.o: unused/maptest.c.o
-.PHONY : unused/maptest.o
-
-# target to build an object file
-unused/maptest.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.o
-.PHONY : unused/maptest.c.o
-
-unused/maptest.i: unused/maptest.c.i
-.PHONY : unused/maptest.i
-
-# target to preprocess a source file
-unused/maptest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.i
-.PHONY : unused/maptest.c.i
-
-unused/maptest.s: unused/maptest.c.s
-.PHONY : unused/maptest.s
-
-# target to generate assembly for a file
-unused/maptest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.s
-.PHONY : unused/maptest.c.s
-
-unused/mystrcopy.o: unused/mystrcopy.c.o
-.PHONY : unused/mystrcopy.o
-
-# target to build an object file
-unused/mystrcopy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.o
-.PHONY : unused/mystrcopy.c.o
-
-unused/mystrcopy.i: unused/mystrcopy.c.i
-.PHONY : unused/mystrcopy.i
-
-# target to preprocess a source file
-unused/mystrcopy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.i
-.PHONY : unused/mystrcopy.c.i
-
-unused/mystrcopy.s: unused/mystrcopy.c.s
-.PHONY : unused/mystrcopy.s
-
-# target to generate assembly for a file
-unused/mystrcopy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.s
-.PHONY : unused/mystrcopy.c.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -309,6 +285,9 @@ help:
 	@echo "... IO.o"
 	@echo "... IO.i"
 	@echo "... IO.s"
+	@echo "... LinkedList.o"
+	@echo "... LinkedList.i"
+	@echo "... LinkedList.s"
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
@@ -321,12 +300,6 @@ help:
 	@echo "... mappings.o"
 	@echo "... mappings.i"
 	@echo "... mappings.s"
-	@echo "... unused/maptest.o"
-	@echo "... unused/maptest.i"
-	@echo "... unused/maptest.s"
-	@echo "... unused/mystrcopy.o"
-	@echo "... unused/mystrcopy.i"
-	@echo "... unused/mystrcopy.s"
 .PHONY : help
 
 

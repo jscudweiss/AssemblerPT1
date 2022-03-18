@@ -9,6 +9,7 @@
 #include "codemake.h"
 #include "mappings.h"
 #include "IO.h"
+#include "LinkedList.h"
 
 #define MAX_LEN 250
 
@@ -18,6 +19,7 @@ int main(int argc, char **argv) {
     char ** filePaths = argv;
     initFile(filePaths);
     initMaps();
+    initLists();
     char* line = malloc(MAX_LEN);
     char comOut;
     int outLine[16];

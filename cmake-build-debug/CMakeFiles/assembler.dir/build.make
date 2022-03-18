@@ -69,24 +69,10 @@ include CMakeFiles/assembler.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/assembler.dir/flags.make
 
-CMakeFiles/assembler.dir/unused/mystrcopy.c.o: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/unused/mystrcopy.c.o: ../unused/mystrcopy.c
-CMakeFiles/assembler.dir/unused/mystrcopy.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assembler.dir/unused/mystrcopy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/unused/mystrcopy.c.o -MF CMakeFiles/assembler.dir/unused/mystrcopy.c.o.d -o CMakeFiles/assembler.dir/unused/mystrcopy.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c
-
-CMakeFiles/assembler.dir/unused/mystrcopy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/unused/mystrcopy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c > CMakeFiles/assembler.dir/unused/mystrcopy.c.i
-
-CMakeFiles/assembler.dir/unused/mystrcopy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/unused/mystrcopy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c -o CMakeFiles/assembler.dir/unused/mystrcopy.c.s
-
 CMakeFiles/assembler.dir/Main.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/Main.c.o: ../Main.c
 CMakeFiles/assembler.dir/Main.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/assembler.dir/Main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assembler.dir/Main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/Main.c.o -MF CMakeFiles/assembler.dir/Main.c.o.d -o CMakeFiles/assembler.dir/Main.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/Main.c
 
 CMakeFiles/assembler.dir/Main.c.i: cmake_force
@@ -100,7 +86,7 @@ CMakeFiles/assembler.dir/Main.c.s: cmake_force
 CMakeFiles/assembler.dir/map.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/map.c.o: ../map.c
 CMakeFiles/assembler.dir/map.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/assembler.dir/map.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/assembler.dir/map.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/map.c.o -MF CMakeFiles/assembler.dir/map.c.o.d -o CMakeFiles/assembler.dir/map.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/map.c
 
 CMakeFiles/assembler.dir/map.c.i: cmake_force
@@ -111,24 +97,10 @@ CMakeFiles/assembler.dir/map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/map.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/map.c -o CMakeFiles/assembler.dir/map.c.s
 
-CMakeFiles/assembler.dir/unused/maptest.c.o: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/unused/maptest.c.o: ../unused/maptest.c
-CMakeFiles/assembler.dir/unused/maptest.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/assembler.dir/unused/maptest.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/unused/maptest.c.o -MF CMakeFiles/assembler.dir/unused/maptest.c.o.d -o CMakeFiles/assembler.dir/unused/maptest.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c
-
-CMakeFiles/assembler.dir/unused/maptest.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/unused/maptest.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c > CMakeFiles/assembler.dir/unused/maptest.c.i
-
-CMakeFiles/assembler.dir/unused/maptest.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/unused/maptest.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c -o CMakeFiles/assembler.dir/unused/maptest.c.s
-
 CMakeFiles/assembler.dir/IO.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/IO.c.o: ../IO.c
 CMakeFiles/assembler.dir/IO.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/assembler.dir/IO.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/assembler.dir/IO.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/IO.c.o -MF CMakeFiles/assembler.dir/IO.c.o.d -o CMakeFiles/assembler.dir/IO.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/IO.c
 
 CMakeFiles/assembler.dir/IO.c.i: cmake_force
@@ -142,7 +114,7 @@ CMakeFiles/assembler.dir/IO.c.s: cmake_force
 CMakeFiles/assembler.dir/mappings.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/mappings.c.o: ../mappings.c
 CMakeFiles/assembler.dir/mappings.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/assembler.dir/mappings.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/assembler.dir/mappings.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/mappings.c.o -MF CMakeFiles/assembler.dir/mappings.c.o.d -o CMakeFiles/assembler.dir/mappings.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mappings.c
 
 CMakeFiles/assembler.dir/mappings.c.i: cmake_force
@@ -156,7 +128,7 @@ CMakeFiles/assembler.dir/mappings.c.s: cmake_force
 CMakeFiles/assembler.dir/codemake.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/codemake.c.o: ../codemake.c
 CMakeFiles/assembler.dir/codemake.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/assembler.dir/codemake.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/assembler.dir/codemake.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/codemake.c.o -MF CMakeFiles/assembler.dir/codemake.c.o.d -o CMakeFiles/assembler.dir/codemake.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/codemake.c
 
 CMakeFiles/assembler.dir/codemake.c.i: cmake_force
@@ -167,29 +139,41 @@ CMakeFiles/assembler.dir/codemake.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/codemake.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/codemake.c -o CMakeFiles/assembler.dir/codemake.c.s
 
+CMakeFiles/assembler.dir/LinkedList.c.o: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/LinkedList.c.o: ../LinkedList.c
+CMakeFiles/assembler.dir/LinkedList.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/assembler.dir/LinkedList.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/LinkedList.c.o -MF CMakeFiles/assembler.dir/LinkedList.c.o.d -o CMakeFiles/assembler.dir/LinkedList.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.c
+
+CMakeFiles/assembler.dir/LinkedList.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/LinkedList.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.c > CMakeFiles/assembler.dir/LinkedList.c.i
+
+CMakeFiles/assembler.dir/LinkedList.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/LinkedList.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.c -o CMakeFiles/assembler.dir/LinkedList.c.s
+
 # Object files for target assembler
 assembler_OBJECTS = \
-"CMakeFiles/assembler.dir/unused/mystrcopy.c.o" \
 "CMakeFiles/assembler.dir/Main.c.o" \
 "CMakeFiles/assembler.dir/map.c.o" \
-"CMakeFiles/assembler.dir/unused/maptest.c.o" \
 "CMakeFiles/assembler.dir/IO.c.o" \
 "CMakeFiles/assembler.dir/mappings.c.o" \
-"CMakeFiles/assembler.dir/codemake.c.o"
+"CMakeFiles/assembler.dir/codemake.c.o" \
+"CMakeFiles/assembler.dir/LinkedList.c.o"
 
 # External object files for target assembler
 assembler_EXTERNAL_OBJECTS =
 
-assembler.exe: CMakeFiles/assembler.dir/unused/mystrcopy.c.o
 assembler.exe: CMakeFiles/assembler.dir/Main.c.o
 assembler.exe: CMakeFiles/assembler.dir/map.c.o
-assembler.exe: CMakeFiles/assembler.dir/unused/maptest.c.o
 assembler.exe: CMakeFiles/assembler.dir/IO.c.o
 assembler.exe: CMakeFiles/assembler.dir/mappings.c.o
 assembler.exe: CMakeFiles/assembler.dir/codemake.c.o
+assembler.exe: CMakeFiles/assembler.dir/LinkedList.c.o
 assembler.exe: CMakeFiles/assembler.dir/build.make
 assembler.exe: CMakeFiles/assembler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable assembler.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable assembler.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/assembler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

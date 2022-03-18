@@ -1,5 +1,5 @@
-CMakeFiles/assembler.dir/Main.c.o: \
- /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/Main.c \
+CMakeFiles/assembler.dir/LinkedList.c.o: \
+ /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.c \
  /usr/include/stdio.h /usr/include/_ansi.h /usr/include/newlib.h \
  /usr/include/_newlib_version.h /usr/include/sys/config.h \
  /usr/include/machine/ieeefp.h /usr/include/sys/features.h \
@@ -23,8 +23,4 @@ CMakeFiles/assembler.dir/Main.c.o: \
  /usr/include/cygwin/wait.h /usr/include/string.h \
  /usr/include/sys/_locale.h /usr/include/strings.h \
  /usr/include/sys/string.h \
- /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/map.h \
- /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/codemake.h \
- /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mappings.h \
- /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/IO.h \
  /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.h

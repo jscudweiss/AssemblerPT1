@@ -9,19 +9,23 @@
 #include "map.h"
 #include "mappings.h"
 #include "IO.h"
+#include "LinkedList.h"
 
 #define MAX_LEN 200
-#define MAX_LINES 32768
-
-char *commands[MAX_LINES];
-char comTypes[MAX_LINES];
+#define MAX_LINES 32726
+list commands = NULL;
 int curCom = 0;
-int commandNum = 0;
+
+void initLists() {
+    commands = createList(MAX_LINES);
+}
+
 /***
  * Converts a Base Ten integer to an array of 15 binary digits
  * @param baseTen, the Base Ten integer input
  * @param outBin, the array of binary digits
  */
+
 void tenToTwo(int baseTen, int outBin[16]) {
     //printf("%d\n",baseTen);
     outBin[0] = 0;
@@ -58,6 +62,7 @@ void parseL(char *string, int curLine) {
         string++;
     }
 }
+
 /***
  * parses the A command
  * @param string
@@ -75,6 +80,7 @@ void parseA(char *string, int intOut[16]) {
     }
     tenToTwo(loc, intOut);
 }
+
 /***
  * parses the C command
  * @param string
@@ -107,9 +113,9 @@ void parseC(char *string, int intOut[16]) {
         }
         ptr++;
     }
-    getDest(dest,intOut);
-    getComp(comp,intOut);
-    getJump(jump,intOut);
+    getDest(dest, intOut);
+    getComp(comp, intOut);
+    getJump(jump, intOut);
     //char outString[200];
     //sprintf(outString, "\n%s = %s ; %s\n", dest,comp,jump);
     //writeLine(outString);
@@ -125,10 +131,9 @@ void parseC(char *string, int intOut[16]) {
  */
 void collectVar(char *inputString, char inputType) {
     switch (inputType) {
-        case 'A':case 'C':
-            commands[curCom] = malloc(strlen(inputString) + 1);
-            strcpy(commands[curCom], inputString);
-            comTypes[curCom] = inputType;
+        case 'A':
+        case 'C':
+            listPush(inputString, inputType, commands);
             curCom++;
             break;
         case 'L':
@@ -140,38 +145,35 @@ void collectVar(char *inputString, char inputType) {
             printf("Invalid commandType %c is not a command Type", inputType);
     }
 }
+
 /****
  * takes a command from the commands array, and gets the binary output
  * @param outCom, the array of binary digits for the output
  * @return an int representing whether there are any remaining commands
  */
 int getCode(int outCom[16]) {
-    if (commandNum < curCom) {
-        char *stringCom = commands[commandNum];
-        char typeCom = comTypes[commandNum];
-        switch (typeCom) {
-            case 'A':
-                parseA(stringCom, outCom);
-                break;
-            case 'C':
-                parseC(stringCom, outCom);
-                break;
-            default:
-                printf("Error: invalid Type%c\n", typeCom);
-                exit(3);
-        }
-        commandNum++;
-        return 1;
-    } else {
-        return 0;
+    char *stringCom = malloc(MAX_LEN);
+    char typeCom= listPull(stringCom, commands);
+    switch (typeCom) {
+        case 'A':
+            parseA(stringCom, outCom);
+            break;
+        case 'C':
+            parseC(stringCom, outCom);
+            break;
+        default:
+            printf("Error: invalid Type%c\n", typeCom);
+            exit(3);
     }
+    free(stringCom);
+    return hasNext(commands);
 }
+
 /***
  * frees all values in the command array
  */
 void freeVals() {
-    for (int i = 0; i < curCom; i++) {
-        free(commands[i]);
-    }
+    freeList(commands);
 }
+
 

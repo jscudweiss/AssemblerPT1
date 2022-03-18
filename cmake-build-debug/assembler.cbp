@@ -80,6 +80,12 @@
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/IO.h">
 			<Option target="assembler"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.c">
+			<Option target="assembler"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/LinkedList.h">
+			<Option target="assembler"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/Main.c">
 			<Option target="assembler"/>
 		</Unit>
@@ -99,12 +105,6 @@
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mappings.h">
-			<Option target="assembler"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c">
-			<Option target="assembler"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/CMakeLists.txt">
