@@ -58,8 +58,8 @@ void initComp() {
     insertKey(compMap, "D+A",   "0000010");
     insertKey(compMap, "D-A",   "0010011");
     insertKey(compMap, "A-D",   "0000111");
-    insertKey(compMap, "A&D",   "0000000");
-    insertKey(compMap, "A|D",   "0010101");
+    insertKey(compMap, "D&A",   "0000000");
+    insertKey(compMap, "D|A",   "0010101");
 
     insertKey(compMap, "M",     "1110000");
     insertKey(compMap, "!M",    "1110001");
@@ -69,8 +69,8 @@ void initComp() {
     insertKey(compMap, "D+M",   "1000010");
     insertKey(compMap, "D-M",   "1010011");
     insertKey(compMap, "M-D",   "1000111");
-    insertKey(compMap, "M&D",   "1000000");
-    insertKey(compMap, "M|D",   "1010101");
+    insertKey(compMap, "D&M",   "1000000");
+    insertKey(compMap, "D|M",   "1010101");
 }
 
 void initJump() {
@@ -119,6 +119,9 @@ int getVal(char *key) {
 
 void closeMaps() {
     freeMap(variableLocs);
+    freeMap(destMap);
+    freeMap(compMap);
+    freeMap(jumpMap);
 }
 
 void getDest(char* key, int intArr[16]){
