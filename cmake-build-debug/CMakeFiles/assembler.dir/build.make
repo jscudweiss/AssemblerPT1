@@ -69,19 +69,19 @@ include CMakeFiles/assembler.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/assembler.dir/flags.make
 
-CMakeFiles/assembler.dir/mystrcopy.c.o: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/mystrcopy.c.o: ../mystrcopy.c
-CMakeFiles/assembler.dir/mystrcopy.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assembler.dir/mystrcopy.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/mystrcopy.c.o -MF CMakeFiles/assembler.dir/mystrcopy.c.o.d -o CMakeFiles/assembler.dir/mystrcopy.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c
+CMakeFiles/assembler.dir/unused/mystrcopy.c.o: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/unused/mystrcopy.c.o: ../unused/mystrcopy.c
+CMakeFiles/assembler.dir/unused/mystrcopy.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/assembler.dir/unused/mystrcopy.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/unused/mystrcopy.c.o -MF CMakeFiles/assembler.dir/unused/mystrcopy.c.o.d -o CMakeFiles/assembler.dir/unused/mystrcopy.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c
 
-CMakeFiles/assembler.dir/mystrcopy.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/mystrcopy.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c > CMakeFiles/assembler.dir/mystrcopy.c.i
+CMakeFiles/assembler.dir/unused/mystrcopy.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/unused/mystrcopy.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c > CMakeFiles/assembler.dir/unused/mystrcopy.c.i
 
-CMakeFiles/assembler.dir/mystrcopy.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/mystrcopy.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c -o CMakeFiles/assembler.dir/mystrcopy.c.s
+CMakeFiles/assembler.dir/unused/mystrcopy.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/unused/mystrcopy.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c -o CMakeFiles/assembler.dir/unused/mystrcopy.c.s
 
 CMakeFiles/assembler.dir/Main.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/Main.c.o: ../Main.c
@@ -111,19 +111,19 @@ CMakeFiles/assembler.dir/map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/map.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/map.c -o CMakeFiles/assembler.dir/map.c.s
 
-CMakeFiles/assembler.dir/maptest.c.o: CMakeFiles/assembler.dir/flags.make
-CMakeFiles/assembler.dir/maptest.c.o: ../maptest.c
-CMakeFiles/assembler.dir/maptest.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/assembler.dir/maptest.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/maptest.c.o -MF CMakeFiles/assembler.dir/maptest.c.o.d -o CMakeFiles/assembler.dir/maptest.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/maptest.c
+CMakeFiles/assembler.dir/unused/maptest.c.o: CMakeFiles/assembler.dir/flags.make
+CMakeFiles/assembler.dir/unused/maptest.c.o: ../unused/maptest.c
+CMakeFiles/assembler.dir/unused/maptest.c.o: CMakeFiles/assembler.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/assembler.dir/unused/maptest.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/assembler.dir/unused/maptest.c.o -MF CMakeFiles/assembler.dir/unused/maptest.c.o.d -o CMakeFiles/assembler.dir/unused/maptest.c.o -c /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c
 
-CMakeFiles/assembler.dir/maptest.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/maptest.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/maptest.c > CMakeFiles/assembler.dir/maptest.c.i
+CMakeFiles/assembler.dir/unused/maptest.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/assembler.dir/unused/maptest.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c > CMakeFiles/assembler.dir/unused/maptest.c.i
 
-CMakeFiles/assembler.dir/maptest.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/maptest.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/maptest.c -o CMakeFiles/assembler.dir/maptest.c.s
+CMakeFiles/assembler.dir/unused/maptest.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/assembler.dir/unused/maptest.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c -o CMakeFiles/assembler.dir/unused/maptest.c.s
 
 CMakeFiles/assembler.dir/IO.c.o: CMakeFiles/assembler.dir/flags.make
 CMakeFiles/assembler.dir/IO.c.o: ../IO.c
@@ -169,10 +169,10 @@ CMakeFiles/assembler.dir/codemake.c.s: cmake_force
 
 # Object files for target assembler
 assembler_OBJECTS = \
-"CMakeFiles/assembler.dir/mystrcopy.c.o" \
+"CMakeFiles/assembler.dir/unused/mystrcopy.c.o" \
 "CMakeFiles/assembler.dir/Main.c.o" \
 "CMakeFiles/assembler.dir/map.c.o" \
-"CMakeFiles/assembler.dir/maptest.c.o" \
+"CMakeFiles/assembler.dir/unused/maptest.c.o" \
 "CMakeFiles/assembler.dir/IO.c.o" \
 "CMakeFiles/assembler.dir/mappings.c.o" \
 "CMakeFiles/assembler.dir/codemake.c.o"
@@ -180,10 +180,10 @@ assembler_OBJECTS = \
 # External object files for target assembler
 assembler_EXTERNAL_OBJECTS =
 
-assembler.exe: CMakeFiles/assembler.dir/mystrcopy.c.o
+assembler.exe: CMakeFiles/assembler.dir/unused/mystrcopy.c.o
 assembler.exe: CMakeFiles/assembler.dir/Main.c.o
 assembler.exe: CMakeFiles/assembler.dir/map.c.o
-assembler.exe: CMakeFiles/assembler.dir/maptest.c.o
+assembler.exe: CMakeFiles/assembler.dir/unused/maptest.c.o
 assembler.exe: CMakeFiles/assembler.dir/IO.c.o
 assembler.exe: CMakeFiles/assembler.dir/mappings.c.o
 assembler.exe: CMakeFiles/assembler.dir/codemake.c.o

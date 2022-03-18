@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
     initFile(filePaths);
     initMaps();
     char* line = malloc(MAX_LEN);
-    char *comOut;
+    char comOut;
     int outLine[16];
     //while there are still lines in the file
     char *cleanedLine = malloc(MAX_LEN);

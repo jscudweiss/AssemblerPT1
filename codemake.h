@@ -7,6 +7,6 @@
 
 #endif //ASSEMBLER_CODEMAKE_H
 
-void collectVar(char *inputString, char *inputType);
+void collectVar(char *inputString, char inputType);
 int getCode(int outCom[16]);
 void freeVals();

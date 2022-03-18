@@ -38,9 +38,7 @@ void initFile(char **filePaths) {
  */
 int readLine(char *curLine) {
     //read the current line
-    char* outC = fgets(curLine, 250, inFile);
-    int out = outC != NULL;
-    return out;
+    return fgets(curLine, 250, inFile)!= NULL;
 }
 
 /***
@@ -66,16 +64,16 @@ void endFile() {
  * @param cleanedLine, output string after cleaning
  */
 void cleanLine(char *inputString, char *cleanedLine) {
-    int slash = 1;
+    int endLoop = 1;
     //while loop to iterate through line and remove all unnecessary chars
-    while (*inputString != '\0' && slash) {
+    while (endLoop) {
         switch (*inputString) {
             case ' ':case '\t':case '\n':case '\v':case '\f':case '\r':
                 //case representing all 6 whitespace characters, skip these
                 break;
-            case '/':
-                //if a comment is found
-                slash = 0;
+                case '/':case '\0':
+                //if a comment is found, or the line is ended
+                endLoop = 0;
                 break;
             default:
                 //otherwise read the old character to the new line
@@ -92,19 +90,16 @@ void cleanLine(char *inputString, char *cleanedLine) {
  * @param comm, the input command, a cleaned line
  * @return the command type of the line, A, C, or L.
  */
-char* commandType(const char* comm) {
+char commandType(const char* comm) {
     switch (*comm) {
-        case ' ':
-            //for empty lines
-            return "";;
         case '\0':
             //for the documents end
-            return "\0";
+            return '\0';
         case '@':
-            return "A\n";
+            return 'A';
         case '(':
-            return "L\n";
+            return 'L';
         default:
-            return "C\n";
+            return 'C';
     }
 }

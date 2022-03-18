@@ -249,53 +249,53 @@ mappings.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/mappings.c.s
 .PHONY : mappings.c.s
 
-maptest.o: maptest.c.o
-.PHONY : maptest.o
+unused/maptest.o: unused/maptest.c.o
+.PHONY : unused/maptest.o
 
 # target to build an object file
-maptest.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/maptest.c.o
-.PHONY : maptest.c.o
+unused/maptest.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.o
+.PHONY : unused/maptest.c.o
 
-maptest.i: maptest.c.i
-.PHONY : maptest.i
+unused/maptest.i: unused/maptest.c.i
+.PHONY : unused/maptest.i
 
 # target to preprocess a source file
-maptest.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/maptest.c.i
-.PHONY : maptest.c.i
+unused/maptest.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.i
+.PHONY : unused/maptest.c.i
 
-maptest.s: maptest.c.s
-.PHONY : maptest.s
+unused/maptest.s: unused/maptest.c.s
+.PHONY : unused/maptest.s
 
 # target to generate assembly for a file
-maptest.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/maptest.c.s
-.PHONY : maptest.c.s
+unused/maptest.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/maptest.c.s
+.PHONY : unused/maptest.c.s
 
-mystrcopy.o: mystrcopy.c.o
-.PHONY : mystrcopy.o
+unused/mystrcopy.o: unused/mystrcopy.c.o
+.PHONY : unused/mystrcopy.o
 
 # target to build an object file
-mystrcopy.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/mystrcopy.c.o
-.PHONY : mystrcopy.c.o
+unused/mystrcopy.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.o
+.PHONY : unused/mystrcopy.c.o
 
-mystrcopy.i: mystrcopy.c.i
-.PHONY : mystrcopy.i
+unused/mystrcopy.i: unused/mystrcopy.c.i
+.PHONY : unused/mystrcopy.i
 
 # target to preprocess a source file
-mystrcopy.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/mystrcopy.c.i
-.PHONY : mystrcopy.c.i
+unused/mystrcopy.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.i
+.PHONY : unused/mystrcopy.c.i
 
-mystrcopy.s: mystrcopy.c.s
-.PHONY : mystrcopy.s
+unused/mystrcopy.s: unused/mystrcopy.c.s
+.PHONY : unused/mystrcopy.s
 
 # target to generate assembly for a file
-mystrcopy.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/mystrcopy.c.s
-.PHONY : mystrcopy.c.s
+unused/mystrcopy.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assembler.dir/build.make CMakeFiles/assembler.dir/unused/mystrcopy.c.s
+.PHONY : unused/mystrcopy.c.s
 
 # Help Target
 help:
@@ -321,12 +321,12 @@ help:
 	@echo "... mappings.o"
 	@echo "... mappings.i"
 	@echo "... mappings.s"
-	@echo "... maptest.o"
-	@echo "... maptest.i"
-	@echo "... maptest.s"
-	@echo "... mystrcopy.o"
-	@echo "... mystrcopy.i"
-	@echo "... mystrcopy.s"
+	@echo "... unused/maptest.o"
+	@echo "... unused/maptest.i"
+	@echo "... unused/maptest.s"
+	@echo "... unused/mystrcopy.o"
+	@echo "... unused/mystrcopy.i"
+	@echo "... unused/mystrcopy.s"
 .PHONY : help
 
 

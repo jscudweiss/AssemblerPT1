@@ -10,6 +10,8 @@
 #include "IO.h"
 
 #define MAX_LEN 200
+#define MAX_VARS 24576
+#define MAX_COMMS 32768
 
 map variableLocs;
 map destMap;
@@ -83,9 +85,11 @@ void initJump() {
     insertKey(jumpMap, "JLE", "110");
     insertKey(jumpMap, "JMP", "111");
 }
-
+/***
+ *
+ */
 void initMaps() {
-    variableLocs = createMap(2000);
+    variableLocs = createMap(MAX_COMMS);
     while (curVal < 16) {
         char strName[3];
         sprintf(strName, "R%d", curVal);
@@ -114,7 +118,7 @@ int getVal(char *key) {
     char *outKey = lookupKey(variableLocs, key);
     unsigned long long len = strlen(outKey);
     char *ptr = outKey + (len - 2);
-    return strtol(outKey, &ptr, 10);
+    return (int) strtol(outKey, &ptr, 10);
 }
 
 void closeMaps() {

@@ -101,10 +101,10 @@
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mappings.h">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/maptest.c">
+		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c">
 			<Option target="assembler"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c">
+		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c">
 			<Option target="assembler"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/CMakeLists.txt">

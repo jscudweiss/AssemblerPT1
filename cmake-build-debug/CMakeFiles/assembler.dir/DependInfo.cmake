@@ -13,8 +13,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/codemake.c" "CMakeFiles/assembler.dir/codemake.c.o" "gcc" "CMakeFiles/assembler.dir/codemake.c.o.d"
   "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/map.c" "CMakeFiles/assembler.dir/map.c.o" "gcc" "CMakeFiles/assembler.dir/map.c.o.d"
   "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mappings.c" "CMakeFiles/assembler.dir/mappings.c.o" "gcc" "CMakeFiles/assembler.dir/mappings.c.o.d"
-  "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/maptest.c" "CMakeFiles/assembler.dir/maptest.c.o" "gcc" "CMakeFiles/assembler.dir/maptest.c.o.d"
-  "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/mystrcopy.c" "CMakeFiles/assembler.dir/mystrcopy.c.o" "gcc" "CMakeFiles/assembler.dir/mystrcopy.c.o.d"
+  "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/maptest.c" "CMakeFiles/assembler.dir/unused/maptest.c.o" "gcc" "CMakeFiles/assembler.dir/unused/maptest.c.o.d"
+  "/cygdrive/c/Users/jscud/CLionProjects/AssemblerPT1/unused/mystrcopy.c" "CMakeFiles/assembler.dir/unused/mystrcopy.c.o" "gcc" "CMakeFiles/assembler.dir/unused/mystrcopy.c.o.d"
   )
 
 # Targets to which this target links.

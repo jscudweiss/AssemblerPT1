@@ -14,10 +14,14 @@
 #define MAX_LINES 32768
 
 char *commands[MAX_LINES];
-char *comTypes[MAX_LINES];
+char comTypes[MAX_LINES];
 int curCom = 0;
 int commandNum = 0;
-
+/***
+ * Converts a Base Ten integer to an array of 15 binary digits
+ * @param baseTen, the Base Ten integer input
+ * @param outBin, the array of binary digits
+ */
 void tenToTwo(int baseTen, int outBin[16]) {
     //printf("%d\n",baseTen);
     outBin[0] = 0;
@@ -30,7 +34,11 @@ void tenToTwo(int baseTen, int outBin[16]) {
     //printf("\n");
 }
 
-
+/***
+ * parses the L command, removing parenthesis, and adding it to the map with the line it was encountered at
+ * @param string, the input string/ the L command
+ * @param curLine, the current line number
+ */
 void parseL(char *string, int curLine) {
     char strStart[200];
     char *myStr = strStart;
@@ -50,7 +58,11 @@ void parseL(char *string, int curLine) {
         string++;
     }
 }
-
+/***
+ * parses the A command
+ * @param string
+ * @param intOut
+ */
 void parseA(char *string, int intOut[16]) {
     string++;//iterate past the @
     unsigned long long len = strlen(string);
@@ -63,7 +75,11 @@ void parseA(char *string, int intOut[16]) {
     }
     tenToTwo(loc, intOut);
 }
-
+/***
+ * parses the C command
+ * @param string
+ * @param intOut
+ */
 void parseC(char *string, int intOut[16]) {
     for (int i = 0; i < 3; i++) {
         intOut[i] = 1;
@@ -94,14 +110,21 @@ void parseC(char *string, int intOut[16]) {
     getDest(dest,intOut);
     getComp(comp,intOut);
     getJump(jump,intOut);
-    char outString[200];
-    sprintf(outString, "\n%s = %s ; %s\n", dest,comp,jump);
+    //char outString[200];
+    //sprintf(outString, "\n%s = %s ; %s\n", dest,comp,jump);
     //writeLine(outString);
 }
 
-
-void collectVar(char *inputString, char *inputType) {
-    switch (*inputType) {
+/***|
+ * takes an input and does one of three things
+ * -stores an A or C command in the commands array
+ * -parses the value as an L command
+ * -skips over empty lines
+ * @param inputString
+ * @param inputType
+ */
+void collectVar(char *inputString, char inputType) {
+    switch (inputType) {
         case 'A':case 'C':
             commands[curCom] = malloc(strlen(inputString) + 1);
             strcpy(commands[curCom], inputString);
@@ -114,21 +137,28 @@ void collectVar(char *inputString, char *inputType) {
         case '\0':
             break;
         default:
-            printf("Invalid commandType %s is not a command Type", inputType);
+            printf("Invalid commandType %c is not a command Type", inputType);
     }
 }
-
+/****
+ * takes a command from the commands array, and gets the binary output
+ * @param outCom, the array of binary digits for the output
+ * @return an int representing whether there are any remaining commands
+ */
 int getCode(int outCom[16]) {
     if (commandNum < curCom) {
         char *stringCom = commands[commandNum];
-        char *typeCom = comTypes[commandNum];
-        switch (*typeCom) {
+        char typeCom = comTypes[commandNum];
+        switch (typeCom) {
             case 'A':
                 parseA(stringCom, outCom);
                 break;
             case 'C':
                 parseC(stringCom, outCom);
                 break;
+            default:
+                printf("Error: invalid Type%c\n", typeCom);
+                exit(3);
         }
         commandNum++;
         return 1;
@@ -136,7 +166,9 @@ int getCode(int outCom[16]) {
         return 0;
     }
 }
-
+/***
+ * frees all values in the command array
+ */
 void freeVals() {
     for (int i = 0; i < curCom; i++) {
         free(commands[i]);
