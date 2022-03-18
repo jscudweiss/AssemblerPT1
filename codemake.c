@@ -19,11 +19,15 @@ int curCom = 0;
 int commandNum = 0;
 
 void tenToTwo(int baseTen, int outBin[16]) {
+    printf("%d\n",baseTen);
     outBin[0] = 0;
     for (int i = 15; i > 0; i--) {
         outBin[i] = baseTen % 2;
+        //printf("%d\n",outBin[i]);
         baseTen = baseTen / 2;
+        //printf("%d\n",baseTen);
     }
+    //printf("\n");
 }
 
 

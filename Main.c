@@ -34,7 +34,7 @@ int main(int argc, char **argv) {
         for(int curBin=0; curBin<16; curBin++){
             sprintf(&textStr[curBin], "%d", outLine[curBin]);
         }
-        writeLine(strcat(textStr,"\n"));
+        writeLine(strcat(textStr,"\r\n"));
     }
     //wrap up open memory
     free(line);

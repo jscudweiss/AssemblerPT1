@@ -44,7 +44,7 @@ void initDest() {
 void initComp() {
     insertKey(compMap, "0",     "0101010");
     insertKey(compMap, "1",     "0111111");
-    insertKey(compMap, "-1",    "0111101");
+    insertKey(compMap, "-1",    "0111010");
     insertKey(compMap, "D",     "0001100");
     insertKey(compMap, "A",     "0110000");
     insertKey(compMap, "!D",    "0001101");
@@ -91,6 +91,14 @@ void initMaps() {
         sprintf(strName, "R%d", curVal);
         addVar(strName);
     }
+    addL("SP", 0);
+    addL("LCL", 1);
+    addL("ARG", 2);
+    addL("THIS", 3);
+    addL("THAT", 4);
+    addL("SCREEN", 16384);
+    addL("KBD", 24576);
+
     destMap = createMap(8);
     initDest();
     compMap = createMap(28);
